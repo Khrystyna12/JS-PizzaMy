@@ -1,0 +1,151 @@
+@mainColor: orange;
+
+@import "pizza/pizza-card";
+
+@media (max-width:1200px) {
+    #first {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    #second {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    #third {
+        display: none;
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100% - 20px;
+    height: 100px;
+    opacity: 0.9;
+    border-radius: 0px;
+    z-index: 7;
+}
+
+#map {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    z-index: 8;
+}
+
+#map2 {
+    position: fixed;
+    bottom: 130px;
+    left: 10px;
+    z-index: 8;
+}
+
+.mirrorY {
+    transform: scale(1, -1);
+}
+
+.badge {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+    z-index: 8;
+    background-color: #e87d20;
+}
+
+.badge2 {
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    width: 100px;
+    height: 130px;
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+    z-index: 8;
+    background-color: #e87d20;
+}
+
+#z {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    min-width: 250px;
+    z-index: 9;
+}
+
+#enter {
+    position: absolute;
+    top: 5px;
+    left: -100px;
+}
+
+#zz {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    min-width: 250px;
+    z-index: 9;
+}
+
+#mrg {
+    margin-top: 120px;
+}
+
+#relative {
+    position: relative;
+}
+
+#halfpizza {
+    position: absolute;
+    height: 100%;
+    right: -50px;
+    top: 0px;
+}
+
+#circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    padding: 4px;
+}
+
+#order {
+    padding: 20px;
+}
+
+#label {
+    position: absolute;
+    font-size: 18px;
+    top: -10px;
+    right: -10px;
+}
+
+.pagination > li > a {
+    color: orange; 
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.pagination > li > a:hover {
+    color: orange; 
+    border-color: white;
+}
+
+.pagination > li > a:focus {
+    color: white; 
+    background-color: orange;
+}

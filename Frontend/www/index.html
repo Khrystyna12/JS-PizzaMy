@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+<body>
+<div id="cart"></div>
+<div class="badge"><font size="4">PIZZA</font><br><br><font size="5">КМА</font></div>
+<img src="assets/images/discount.svg" id="map" class="mirrorY">
+<div class="badge2"><b><font size="2" color="white">ЦЬОГО<br>ТИЖНЯ<br>НА ВСЕ<br>-20%</font></b></div>
+<img src="assets/images/discount.svg" id="map2">
+<div class="col-sm-9 col-md-9 col-xs-6">
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <p class="navbar-text"><font size="4"><span style='padding-left:120px;'>(044) 222 5 222</span></font></p>
+            <p class="navbar-text" id="second"><font size="2">24 години/ 7 днів на тиждень</font></p>
+            <p class="navbar-text" id="first"><font size="3">Безкоштовна доставка піци</font></p>
+        </div>
+        <div class="container">
+            <p class="navbar-text" id="third"><a href="#" class="navbar-link"><font size="4" color="white"><span style='padding-left:120px;'>Піца</span></font></a></p>
+        </div>
+    </nav>
+    <div class="text-center">
+        <div id="mrg">
+            <font size="6">Усі піци</font>
+            <div id="circle">9</div>
+        </div>
+        <ul class="pagination">
+            <li><a href="#">Усі</a></li>
+            <li><a href="#">М'ясні</a></li>
+            <li><a href="#">З ананасами</a></li>
+            <li><a href="#">З грибами</a></li>
+            <li><a href="#">З моропродуктами</a></li>
+            <li><a href="#">Вега</a></li>
+        </ul>
+    </div>
+    <div class="row" id="pizza_list">
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card" id="relative">
+                <img src="assets/images/pizza_1.jpg">
+                <span class="label label-danger" id="label">Нова</span>
+
+                <div class="caption"><h3>Міксовий поло</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card" id="relative">
+                <img src="assets/images/pizza_2.jpg">
+                <span class="label label-success" id="label">Популярна</span>
+
+                <div class="caption"><h3>BBQ</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_3.jpg">
+
+                <div class="caption"><h3>Маргарита</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_4.jpg">
+
+                <div class="caption"><h3>Россо Густо</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_5.jpg">
+
+                <div class="caption"><h3>Сициліано</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_6.jpg">
+
+                <div class="caption"><h3>Мікс смаків</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_7.jpg">
+
+                <div class="caption"><h3>Імпреза</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 col-md-4 col-xs-12">
+            <div class="thumbnail pizza-card">
+                <img src="assets/images/pizza_8.jpg">
+
+                <div class="caption"><h3>Дольче Маре</h3><h4>М'ясна піца</h4>
+
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    
+                    <p>
+                        <aa><img src="assets/images/size-icon.svg"><c>30</c></aa>
+                        <bb><img src="assets/images/size-icon.svg"><c>40</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><img src="assets/images/weight.svg"><c>370</c></aa>
+                        <bb><img src="assets/images/weight.svg"><c>660</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa><c><font size="6">99</font></c></aa>
+                        <bb><font size="6">169</font></bb>
+                    </p>
+
+                    <p>
+                        <aa><c>грн.</c></aa>
+                        <bb><c>грн.</c></bb>
+                    </p>
+                    
+                    <p>
+                        <aa href="#" class="btn btn-warning">Купити</aa>
+                        <bb href="#" class="btn btn-warning">Купити</bb>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="col-sm-3 col-md-3 col-xs-6" id="z">
+    <div class="panel panel-default" id="relative">
+        <button class="btn btn-warning" type="button" id="enter">Ввійти</button>
+        <div class="panel-boddy" id="order">
+            <font size="4"><b>Замовлення</b></font>
+            <div id="circle">1</div>
+            <font size="1" color="gray">Очистити замовлення</font>
+        </div>
+        <div class="panel-heading" id="relative">
+            <font size="4" color="orange">Міксовий поло (Мала)</font>
+            <p>
+                <img src="assets/images/size-icon.svg"><c>30</c>
+                <img src="assets/images/weight.svg"><c>370</c>
+            </p>
+            <p>
+                <c><b>99грн</b></c>
+                <button type="button" class="btn btn-danger btn-xs">-</button>
+                <c><b>1</b></c>
+                <button type="button" class="btn btn-success btn-xs">+</button>
+                <button type="button" class="btn btn-default btn-xs"><font color="orange">x</font></button>
+                <img src="assets/images/pizza_1.jpg" id="halfpizza">
+            </p>
+        </div>
+        
+        <div class="panel-heading" id="relative">
+            <font size="4" color="orange">Мікс смаків (Мала)</font>
+            <p>
+                <img src="assets/images/size-icon.svg"><c>30</c>
+                <img src="assets/images/weight.svg"><c>370</c>
+            </p>
+            <p>
+                <c><b>99грн</b></c>
+                <button type="button" class="btn btn-danger btn-xs">-</button>
+                <c><b>1</b></c>
+                <button type="button" class="btn btn-success btn-xs">+</button>
+                <button type="button" class="btn btn-default btn-xs"><font color="orange">x</font></button>
+                <img src="assets/images/pizza_6.jpg" id="halfpizza">
+            </p>
+        </div>
+    </div>
+</div>
+<div class="col-sm-3 col-md-3 col-xs-6" id="zz">
+    <div class="panel panel-default">
+        <div class="panel-boddy" id="order">
+            <p>
+                <aa><font size="3"><b>Сума замовлення</b></font></aa>
+                <bb><font size="5"><b>198 грн</b></font></bb>
+            </p>
+            <button type="button" class="btn btn-warning btn-block">Замовити</button>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<!--<script type="text/javascript"  src="assets/js/main.js"> </script>-->
+</body>
+</html>
